@@ -17,6 +17,7 @@ div .text-right {
 #navibar {
 	font-family: 'Montserrat', sans-serif;
 	background-color: black;
+	letter-spacing: 2px;
 }
 
 #logo {
