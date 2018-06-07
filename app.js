@@ -18,12 +18,15 @@ const users = require('./routes/users');
 require('./config/passport')(passport);
 
 //DB config
+console.log(process.env.NODE_ENV)
 if(process.env.NODE_ENV != 'production'){
   const db = require('./config/database');
 } else {
   console.log("this is the mongo URI" + process.env.MONGOURI)
   const db = {mongoURI: process.env.MONGOURI};
 }
+
+console.log()
 
 // Map global promise - get rid of warning
 mongoose.Promise = global.Promise;
