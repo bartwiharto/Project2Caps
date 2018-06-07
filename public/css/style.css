@@ -1,0 +1,30 @@
+body {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position: 50% 25%; 
+}
+
+div .text-right {
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 12%;
+	position: relative;
+	background-color: rgba(56, 58, 60, 0.4);
+	padding-bottom: 15px;
+	padding-right: 20%; 
+	letter-spacing: 3px;
+}
+
+#navibar {
+	font-family: 'Montserrat', sans-serif;
+	background-color: black;
+}
+
+#logo {
+	margin-right: 40px;
+	font-size: 30px;
+	padding: 0px;
+}
+
+#currentclient {
+	background-color: black;
+}
