@@ -21,6 +21,7 @@ require('./config/passport')(passport);
 if(process.env.NODE_ENV != 'production'){
   const db = require('./config/database');
 } else {
+  console.log("this is the mongo URI" + process.env.MONGOURI)
   const db = {mongoURI: process.env.MONGOURI};
 }
 
