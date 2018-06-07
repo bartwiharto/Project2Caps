@@ -19,7 +19,7 @@ require('./config/passport')(passport);
 
 //DB config
 console.log(process.env.NODE_ENV)
-const db;
+let db;
 if(process.env.NODE_ENV != 'production'){
   console.log("not in production")
   db = require('./config/database');
