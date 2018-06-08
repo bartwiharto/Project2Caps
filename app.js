@@ -18,7 +18,6 @@ const users = require('./routes/users');
 require('./config/passport')(passport);
 
 //DB config
-console.log(process.env.NODE_ENV)
 let db;
 if(process.env.NODE_ENV != 'production'){
   console.log("not in production")
